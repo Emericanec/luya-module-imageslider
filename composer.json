@@ -1,5 +1,5 @@
 {
-	"name" : "Emericanec/luya-module-imageslider",
+	"name" : "emericanec/luya-module-imageslider",
 	"description" : "Emericanec Luya ImageSlider",
 	"type" : "luya-module",
 	"keywords" : ["php", "luya", "module", "imageslider"],
@@ -14,7 +14,7 @@
 		}
 	],
 	"support" : {
-		"issues" : "https://github.com/Emericanec/luya-module-imageslider"
+		"issues" : "https://github.com/emericanec/luya-module-imageslider"
 	},
 	"require" : {
 		"zephir/luya" : "1.0.0-beta3"
