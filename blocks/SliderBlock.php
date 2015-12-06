@@ -59,11 +59,6 @@ class SliderBlock extends \cmsadmin\base\Block
         ];
     }
 
-    public function renderFrontend(\Twig_Environment $twig)
-    {
-        return parent::renderFrontend($twig);
-    }
-
     public function twigFrontend()
     {
         return '
