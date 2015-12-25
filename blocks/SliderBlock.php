@@ -33,29 +33,10 @@ class SliderBlock extends \cmsadmin\base\Block
         ];
     }
 
-    public function getFiles()
-    {
-        $fileEntries = $this->getVarValue('imageArrays');
-        $files = [];
-
-        if (!empty($fileEntries)) {
-            foreach ($fileEntries as $fileEntry) {
-                if (array_key_exists('imageId', $fileEntry)) {
-                    $files[] = [
-                        'meta' => $fileEntry,
-                        'file' => \Yii::$app->storage->getImage($fileEntry['imageId']),
-                    ];
-                }
-            }
-        }
-
-        return $files;
-    }
-
     public function extraVars()
     {
         return [
-            'fileList' => $this->getFiles(),
+            'images' => $this->zaaImageArrayUpload($this->getVarValue('imageArrays'))
         ];
     }
 
@@ -63,16 +44,16 @@ class SliderBlock extends \cmsadmin\base\Block
     {
         return '
         <ul class="image-slider rslides">
-        {% for item in extras.fileList %}
-            <li><img src="{{ item.file.source }}"></li>
+        {% for item in extras.images %}
+            <li><img src="{{ item.source }}"></li>
         {% endfor %}
         </ul>';
     }
 
     public function twigAdmin()
     {
-        return '{% if vars.imageArrays is empty %}<span class="block__empty-text">' . 'empty' . '</span>{% else %}
-            {{vars.imageArrays|length}} images in slider
+        return '{% if extras.images is empty %}<span class="block__empty-text">' . 'empty' . '</span>{% else %}
+            {{extras.images|length}} images in slider
         {% endif %}';
     }
 }
