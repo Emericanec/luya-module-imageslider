@@ -17,7 +17,7 @@
 		"issues" : "https://github.com/emericanec/luya-module-imageslider"
 	},
 	"require" : {
-		"zephir/luya" : "1.0.0-beta3"
+		"luyadev/luya" : ">=1.0.0-beta3"
 	},
 	"autoload" : {
 		"psr-4" : {
