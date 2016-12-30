@@ -17,6 +17,7 @@
 	},
 	"require" : {
 		"luyadev/luya" : "*"
+
 	},
 	"autoload" : {
 		"psr-4" : {
