@@ -5,6 +5,8 @@
 	"keywords" : ["php", "luya", "module", "imageslider"],
 	"license": "MIT",
 	"homepage" : "http://luya.io",
+	"minimum-stability": "stable",
+	"prefer-stable" : true,
 	"authors" : [
 		{
 			"name" : "Andrey Svetlichniy",
