@@ -15,7 +15,7 @@
 	"support" : {
 		"issues" : "https://github.com/emericanec/luya-module-imageslider"
 	},
-	"require" : {
+	"require-dev" : {
 		"luyadev/luya" : "^1.0@dev"
 
 	},
