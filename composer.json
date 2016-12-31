@@ -16,10 +16,6 @@
 	"support" : {
 		"issues" : "https://github.com/emericanec/luya-module-imageslider"
 	},
-	"require-dev" : {
-		"luyadev/luya" : "^1.0@dev"
-
-	},
 	"autoload" : {
 		"psr-4" : {
 			"imageslider\\" : ""
